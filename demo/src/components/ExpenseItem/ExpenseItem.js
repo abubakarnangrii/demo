@@ -1,41 +1,18 @@
 import React from 'react';
 import './ExpenseItem.css';
+import ExpenseDate from '../ExpenseDate/ExpenseDate';
 
-export default function ExpenseItem() {
-    const expenses = [
-        {
-            date: "March 26, 2023",
-            title: "Car Payment",
-            price: "$242.56",
-        },
-        {
-            date: "March 26, 2023",
-            title: "Car Payment",
-            price: "$242.56",
-        },
-        {
-            date: "March 26, 2023",
-            title: "Car Payment",
-            price: "$242.56",
-        },
-        {
-            date: "March 26, 2023",
-            title: "Car Payment",
-            price: "$242.56",
-        },
-    ];
+export default function ExpenseItem(props) {
+    
 
     return (
         <div className='expense-item'>
-            {expenses.map((expense, index) => (
-                <div key={index}>
-                    <div className='expense-item__date'>{expense.date}</div>
-                    <div className='expense-item__data'>
-                        <div className='expense-item__description'>{expense.title}</div>
-                        <div className='expense-item__price'>{expense.price}</div>
-                    </div>
-                </div>
-            ))}
+            <ExpenseDate date={props.date}/>
+            <div className='expense-item__data'>
+                <div className='expense-item__description'>{props.title}</div>
+                <div className='expense-item__price'>{props.price}</div>
+            </div>
+
         </div>
     );
 }
