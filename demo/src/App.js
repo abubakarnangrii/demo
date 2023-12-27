@@ -20,15 +20,15 @@ function App() {
       price: "$120.56",
     },
     {
-      date: new Date(2023,5,12),
+      date: new Date(2023, 5, 12),
       title: "Cloths",
       price: "$261.56",
     },
   ];
   return (
     <div className="App">
-        <h1 className='Expense-item-title'>Expense Item</h1>
-      <Expenses item={expenses}/>
+      <h1 className='Expense-item-title'>Expense Item</h1>
+      <Expenses item={expenses} />
     </div>
   );
 }
