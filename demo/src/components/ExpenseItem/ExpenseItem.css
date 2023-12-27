@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     margin: 20px 0px;
+    border-radius: 10px;
 }
 
 .expense-item__description{
@@ -14,7 +15,7 @@
     font-weight: 600;
     padding-left: 30px;
     color: #fff;
-    padding-top: 33px;
+    padding-top: 28px;
 }
 .expense-item__price {
     display: flex;
