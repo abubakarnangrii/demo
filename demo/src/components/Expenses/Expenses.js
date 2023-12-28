@@ -1,5 +1,5 @@
 import React from 'react'
-import ExpenseItem from '../ExpenseItem/ExpenseItem'
+import ExpenseItem from './ExpenseItem/ExpenseItem'
 import './Expenses.css'
 
 export default function Expenses(props) {
